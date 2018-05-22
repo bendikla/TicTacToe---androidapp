@@ -1,0 +1,19 @@
+<resources>
+    <string name="action_settings">something here</string>
+    <string name="Welcometxt">Tic-Tac-Toe</string>
+    <string name="Startbtn">Start Game</string>
+    <string name="SinglePBtn">Singleplayer</string>
+    <string name="MultiPBtn">Multiplayer </string>
+    <string name="Infousername">Pick your username:</string>
+    <string name="LeaderboardBtn">Leaderboard </string>
+    <string name="Wins">Wins:</string>
+    <string name="Losses">Losses:</string>
+    <string name="Player1">Player1</string>
+    <string name="zero">0</string>
+    <string name="M_P_1">PL1 Username:</string>
+    <string name="M_P_2">PL2 Username:</string>
+    <string name="drawTxt">Draw:</string>
+    <string name="Player2">Player2</string>
+    <string name="AIdiff">AI difficulty:</string>
+    <string name="username">Username</string>
+</resources>

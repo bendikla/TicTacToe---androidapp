@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/BackgroundColor"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/autour_one"
+        android:padding="30sp"
+        android:text="@string/Welcometxt"
+        android:textAlignment="center"
+        android:textColor="@color/TxtColor"
+        android:textSize="35sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40sp"
+        app:layout_constraintLeft_toRightOf="@id/layoutSinglPl"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/Player1Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:text="@string/M_P_1"
+        android:textAlignment="center"
+        android:textColor="@color/TxtColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/layoutSinglPl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gameTitle" />
+
+    <EditText
+        android:id="@+id/Player1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/editTxtColor"
+        android:hint="@string/username"
+        android:textAlignment="center"
+        android:textColor="@color/TxtColor"
+        android:textColorHint="@color/editTxtColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20sp"
+        app:layout_constraintLeft_toRightOf="@id/layoutSinglPl"
+        app:layout_constraintTop_toBottomOf="@id/Player1Info" />
+
+    <TextView
+        android:id="@+id/Player2Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:text="@string/M_P_2"
+        android:textAlignment="center"
+        android:textColor="@color/TxtColor"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/layoutSinglPl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Player1Name" />
+
+    <EditText
+        android:id="@+id/Player2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/editTxtColor"
+        android:hint="@string/username"
+        android:textAlignment="center"
+        android:textColor="@color/editTxtColor"
+        android:textColorHint="@color/editTxtColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20sp"
+        app:layout_constraintLeft_toRightOf="@id/layoutSinglPl"
+        app:layout_constraintTop_toBottomOf="@id/Player2Info" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:background="@color/btnBckGrColor"
+        android:text="@string/Startbtn"
+        android:textAllCaps="false"
+        android:textColor="@color/TxtColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/layoutSinglPl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Player2Name" />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

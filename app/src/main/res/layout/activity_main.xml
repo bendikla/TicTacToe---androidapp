@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40sp"
+        android:background="@color/BackgroundColor">
+
+        <Button
+            android:id="@+id/btnStartsite"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/btnBckGrColor"
+            android:text="Back to startsite"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/player1Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="@string/Player1"
+            android:textAlignment="center"
+            android:textColor="@color/TxtColor"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/klokke"
+            android:layout_marginTop="20sp"
+            app:layout_constraintLeft_toRightOf="@id/infoLayout"
+            app:layout_constraintTop_toBottomOf="@id/btnStartsite" />
+
+        <TextView
+            android:id="@+id/winTxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:freezesText="true"
+            android:text="@string/Wins"
+            android:textAlignment="center"
+            android:textColor="@color/TxtColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/infoLayout"
+            app:layout_constraintRight_toLeftOf="@id/drawTxt"
+            app:layout_constraintTop_toBottomOf="@id/player1Name" />
+
+
+        <TextView
+            android:id="@+id/winCounter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:freezesText="true"
+            android:padding="4sp"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:textColor="@color/TxtColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/infoLayout"
+            app:layout_constraintRight_toLeftOf="@id/drawCounter"
+            app:layout_constraintTop_toBottomOf="@id/winTxt1" />
+
+
+        <TextView
+            android:id="@+id/player2Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="@string/Player2"
+            android:textColor="@color/player2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/klokke"
+            app:layout_constraintRight_toRightOf="@id/infoLayout"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/btnStartsite" />
+
+        <TextView
+            android:id="@+id/winTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:freezesText="true"
+            android:text="@string/Wins"
+            android:textAlignment="center"
+            android:textColor="@color/player2"
+            app:layout_constraintLeft_toRightOf="@id/drawTxt"
+            app:layout_constraintRight_toRightOf="@id/infoLayout"
+            app:layout_constraintTop_toBottomOf="@id/player2Name" />
+
+
+        <TextView
+            android:id="@+id/winCounter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:freezesText="true"
+            android:padding="4sp"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:textColor="@color/player2"
+            app:layout_constraintLeft_toRightOf="@id/drawCounter"
+            app:layout_constraintRight_toRightOf="@id/infoLayout"
+            app:layout_constraintTop_toBottomOf="@id/winTxt2" />
+
+        <Chronometer
+            android:id="@+id/klokke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/editTxtColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnStartsite" />
+
+        <TextView
+            android:id="@+id/drawTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="@string/drawTxt"
+            android:textAlignment="center"
+            android:textColor="@color/editTxtColor"
+            app:layout_constraintLeft_toRightOf="@id/winTxt1"
+            app:layout_constraintRight_toLeftOf="@id/winTxt2"
+            app:layout_constraintTop_toBottomOf="@id/klokke" />
+
+        <TextView
+            android:id="@+id/drawCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:freezesText="true"
+            android:padding="4sp"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:textColor="@color/editTxtColor"
+            app:layout_constraintLeft_toRightOf="@id/winCounter1"
+            app:layout_constraintRight_toLeftOf="@id/winCounter2"
+            app:layout_constraintTop_toBottomOf="@id/drawTxt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/BackgroundColor">
+
+        <Button
+            android:id="@+id/tttBtn_00"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/tttBtn_01"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/tttBtn_02"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/BackgroundColor">
+
+        <Button
+            android:id="@+id/tttBtn_10"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/tttBtn_11"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/tttBtn_12"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/BackgroundColor">
+
+        <Button
+            android:id="@+id/tttBtn_20"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/tttBtn_21"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/tttBtn_22"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:freezesText="true"
+            android:textSize="40sp" />
+    </LinearLayout>
+</LinearLayout>
